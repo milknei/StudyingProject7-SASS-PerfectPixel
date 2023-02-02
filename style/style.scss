@@ -1,0 +1,65 @@
+@import 'variables';
+@import 'mixin';
+
+@font-face {
+    font-family: "Lato";
+    src: url('../fonts/Lato-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url('../fonts/Lato-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url('../fonts/Lato-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.page-wrapper {
+    width: 1920px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.container {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 275px;
+}
+
+body * {
+    font-family: "Lato";
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@import 'header';
+@import 'be_aware';
+@import 'how_works';
+@import 'start';
+@import 'product';
+@import 'footer';

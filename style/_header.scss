@@ -1,0 +1,77 @@
+@import 'variables';
+@import 'mixin';
+
+.header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid $lightGrey;
+    background: $white;
+    padding-top: 19px;
+    padding-bottom: 15px;
+    z-index: 1000;
+    
+    .container {
+        display: flex;
+        gap: 263px;
+        justify-content: space-between;
+    }
+
+    &-nav {
+        display: flex;
+        align-items: center;
+        gap: 172.46px;
+    }
+
+    &-logo {
+        position: relative;
+        bottom: 2px;
+        width: 79.57px;
+        height: 23.04px;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 72px;
+    }
+
+    &-link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: $dark;
+        white-space: nowrap;
+    }
+
+    &-buttons {
+        position: relative;
+        left: 1px;
+        display: flex;
+        justify-content: space-between;
+        gap: 14px;
+        margin-right: 5px;
+
+        &-singin {
+            background: transparent;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            white-space: nowrap;
+            padding: 10px 20px;
+        }
+
+        &-trial {
+            position: relative;
+            left: 2px;
+            bottom: 2px;
+            @include default-button;
+            padding: 13px 48px;
+            white-space: nowrap;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+        }
+    }
+}

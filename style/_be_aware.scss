@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixin';
+
+.be_aware {
+    width: 100%;
+    max-width: 1370px;
+    
+    &-background {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-image: url('../img/be-aware.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 175px;
+        padding-bottom: 337px;
+    }
+    
+    &-content {
+        width: 440px;
+        margin-left: 1px;
+    }
+    
+    &-title {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: $green;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 74px;
+        margin-bottom: 30px;
+    }
+    
+    &-description {
+        width: 430px;
+        color: $grey;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.9;
+        margin-bottom: 51px;
+    }
+    
+    &-button {
+        @include default-button;
+    }
+}

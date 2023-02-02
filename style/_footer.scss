@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixin';
+
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1920px;
+    background: #245852;
+    padding: 95px 275px;
+
+    &-item {
+        font-size: 25px;
+        line-height: 30px;
+        color: $white;
+        margin-bottom: 60px;
+        
+        &-title {
+            font-weight: 900;
+            font-size: 40px;
+            line-height: 55px;
+            letter-spacing: 1.2px;
+            color: $white;
+            margin-bottom: 60px;
+        }
+    }
+}
